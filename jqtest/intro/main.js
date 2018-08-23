@@ -21,8 +21,8 @@ $('.yeye').find('#c1').css('background','green');
 
 //2.从下往上找
 $('#c2').parent().css('background','pink');
-$('#c2').parent().css('border','purple 2px solid');
-$('.erzi').parents('.yeye').css('border','pink 1px solid ');
+$('#c2').parent().css('border','cadetblue 2px solid');
+$('.erzi').parents('.yeye').css('border','cadetblue 1px solid ');
 
 //3.同级寻找
 $('.erzi').filter('#c3').css('background','yellow');
@@ -47,5 +47,69 @@ $('.css1').hide();
 $('#css').fadeOut(2000);
 $('.css1').fadeIn(3000);
 console.log($('.css1').hasClass('example'));
+
+//4.apply
+var lgd= $('#lgd');
+function change1() {
+    if(lgd.hasClass('active')){
+
+        lgd.removeClass('active');
+
+
+    }else {
+        lgd.addClass('active');
+
+
+    }
+}
+var dong=$('#dong');
+function change2() {
+    if(dong.hasClass('active')){
+
+        dong.removeClass('active');
+        dong.fadeOut(200);
+
+    }else {
+        dong.addClass('active');
+        dong.show();
+    }
+
+}
+setInterval(change1,500);
+setInterval(change2,1000);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
