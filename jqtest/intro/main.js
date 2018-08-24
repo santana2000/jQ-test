@@ -78,9 +78,15 @@ function change2() {
 setInterval(change1,500);
 setInterval(change2,1000);
 
+//操作dom
+console.log($('.words').text());
+console.log($('.words').html());
 
+$('.words').append('<em>news222</em>');
+$('.words').prepend('<em>news111</em>');
 
-
+$('.words').append('news');
+$('.words span').remove();
 
 
 
