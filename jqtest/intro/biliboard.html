@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #board {
+            display: none;
+            background: darkgray;
+            padding: 10px;
+            margin-top: 15px;
+            width: 400px;
+            height: 300px;
+        }
+
+        #board-trigger {
+            font-size: 20px;
+
+        }
+
+        #board.active {
+            background: black;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+<button id="board-trigger">展开公告</button>
+<div id="board">
+    <h2>公告</h2>
+    DOM事件被发送用于通知代码相关的事情已经发生了。
+    每个事件都是继承自Event 类的对象，
+    可以包括自定义的成员属性及函数用于获取事件发生时相关的更多信息。
+    事件可以表示从基本用户交互到渲染模型中发生的事件的自动通知的所有内容。
+</div>
+
+
+<script src="https://cdn.bootcss.com/jquery/3.3.0/jquery.min.js"></script>
+<script src="bili.js"></script>
+</body>
+</html>
