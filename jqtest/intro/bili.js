@@ -24,11 +24,22 @@ board.on('mouseleave',function () {
     board.removeClass('active');
 })
 
-
+//---------------------------------------------------------------------------
 //操作元素属性
-
+//attr和prop的区别
 console.dir($('#me'));               //通过dir打印
 $('#me').attr('name','333');
 $('#me').attr('xiaohua','ni');           //标签（元素）的属性
 $('#me').prop('textContent','biehaha');  //DOM对象的属性
 //$('#me').removeAttr('xiaohua');  //DOM对象上的属性值
+
+//-----------------------------------------------------------------------------
+//表单输入与提交
+var name=$('#username').val();
+console.log('name:',name);
+
+var btn1=$('#btn1').on('click',function () {
+    $('#info').submit();
+})
+
+
