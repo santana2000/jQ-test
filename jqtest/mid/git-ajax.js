@@ -32,7 +32,7 @@ gitfind.on('click',function (e) {
                 alert('请求出错，请稍后尝试')
             }
         })
-
+        var a;
     //})
 
 })
