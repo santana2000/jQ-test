@@ -42,4 +42,21 @@ var btn1=$('#btn1').on('click',function () {
     $('#info').submit();
 })
 
+//-----------------------------------------------------------------------------
+//load方法
 
+var tip=$('#tip');
+var card=$('#card');
+var loaded;
+
+tip.on('mouseenter',function () {
+    card.slideDown();
+    if(!loaded){
+        card.load('resume.html')
+        loaded=ture;
+    }
+})
+
+tip.on('mouseleave',function () {
+    card.slideUp();
+})
