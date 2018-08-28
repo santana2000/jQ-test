@@ -2,7 +2,7 @@
 
 //JQ通过ajax实现github用户查询
 
-//这一节细节错误好多！！！！
+//这一节细节错误好多！！！！基础语法薄弱
 
 var search=$('#search');
 var gituser=$('input#gituser');
@@ -16,7 +16,6 @@ gitfind.on('click',function (e) {
         name =gituser.val();
         $.ajax({
             url:'http://api.github.com/users/' + name,
-
             success:function (data) {
                 console.log('data:',data);
                 var htmluse =
@@ -32,7 +31,7 @@ gitfind.on('click',function (e) {
                 alert('请求出错，请稍后尝试')
             }
         })
-        var a;
+
     //})
 
 })
