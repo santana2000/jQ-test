@@ -1,0 +1,31 @@
+* {
+    -moz-box-sizing: padding-box;
+}
+
+.container {
+    background: lightsteelblue;
+    width: 960px;
+    margin: 10px auto;
+
+}
+
+header {
+    margin-top: 20px;
+}
+
+.myform {
+    width: 450px;
+    background: khaki;
+
+    border: black 1px solid;
+}
+
+input {
+    width: 100%;
+}
+
+.error1 {
+
+}
+
+
