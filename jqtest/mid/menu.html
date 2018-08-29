@@ -24,6 +24,26 @@
             margin: 5px;
             border: cadetblue 2px solid;
         }
+
+        /*教务系统侧栏*/
+        .info {
+            display: none;
+            width: 300px;
+            height: 200px;
+            border: cadetblue 1px solid;
+        }
+
+        span {
+            display: block;
+            background: aquamarine;
+            border: cadetblue 1.5px solid;
+            border-bottom: 0px;
+            width: 300px;
+        }
+
+        .student {
+            list-style: none;
+        }
     </style>
 </head>
 <body>
@@ -37,7 +57,6 @@
                 <li class="next">提高</li>
             </ul>
 
-
         </li>
         <li class="language" id="react">react
             <ul class="menu-next">
@@ -48,6 +67,37 @@
         </li>
         <li class="language" id="boot">boot</li>
         <li class="language" id="jquery">jquery</li>
+    </ul>
+</div>
+
+<br>
+
+<div class="wrap">
+    <ul class="student">
+        <li class="click-show">
+            <span>我的课程</span>
+             <div class="info">
+            课程信息
+             </div>
+        </li>
+        <li class="click-show">
+            <span>学习计划</span>
+            <div class="info">
+                课程信息
+            </div>
+        </li><li class="click-show">
+            <span>成绩查询</span>
+            <div class="info">
+                课程信息
+            </div>
+        </li><li class="click-show">
+            <span>课外活动</span>
+            <div class="info">
+                课程信息
+            </div>
+        </li>
+
+
     </ul>
 </div>
 
