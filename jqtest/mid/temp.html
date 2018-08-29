@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>animate</title>
+    <style>
+        div {
+            position: absolute;
+            left: 40px;
+            top: 50px;
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            font-size: 30px;
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+<button>浩哥：</button>
+<div>别问</div>
+
+    <!--自定义动画-->
+
+    <script src="https://cdn.bootcss.com/jquery/3.3.0/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $("button").click(function () {
+                var json = {"width": 500, "height": 500, "left": 300, "top": 300, "border-radius": 100};
+                var json2 = {
+                    "width": 200,
+                    "height": 200,
+                    "left": 100,
+                    "top": 100,
+                    "border-radius": 400,
+                    "background-color": "red"
+                };
+                $('div').text('问就是送');
+                //自定义动画
+                $("div").animate(json, 1500, function () {
+
+                    $("div").animate(json2, 1500, function () {
+
+                    });
+                });
+
+            })
+        })
+    </script>
+</body>
+</html>

@@ -4,7 +4,7 @@
 
 //这一节细节错误好多！！！！基础语法薄弱
 
-var search=$('#search');
+var search=$('#search');                //没加#
 var gituser=$('input#gituser');
 var gitfind=$('#gitfind');
 var content=$('#content');

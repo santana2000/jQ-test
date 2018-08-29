@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>stop</title>
+    <style>
+        div {
+            width: 300px;
+            height: 300px;
+            display: none;
+            /*opacity: 1;*/
+            background-color: pink;
+        }
+    </style>
+
+    <script src="https://cdn.bootcss.com/jquery/3.3.0/jquery.min.js"></script>
+
+    <script>
+        $(function () {
+            //点击按钮后产生动画
+            $("button:eq(0)").click(function () {
+                $("div").slideDown(2000);
+            })
+
+            //滑出动画
+            $("button:eq(1)").click(function () {
+                $("div").slideUp(2000);
+            })
+
+            $("button:eq(2)").click(function () {
+                $("div").stop(false,false);   //通常用默认的stop,即两个都是false
+            })
+
+            // $("button:eq(3)").click(function () {
+            //     //改透明度
+            //     //同样有四种用法
+            //     $("div").fadeTo(1000, 0.5, function () {
+            //         alert(1);
+            //     });
+            // })
+        })
+    </script>
+</head>
+<body>
+<button>淡入</button>
+<button>淡出</button>
+<button>stop</button>
+
+<button>改透明度为0.5</button>
+<div></div>
+
+</body>
+</html>
