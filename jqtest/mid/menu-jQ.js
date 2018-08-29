@@ -3,15 +3,17 @@
 $(function () {
 
     var language = $('.language');
+    var vue = $('#vue');
     var next = $('.next');
 
     language.on('mouseover',function () {
-        $(this).children('.next').show();
+        //console.log(vue);
+        $(this).children('ul').show();
     });
     language.on('mouseleave',function () {
-        $(this).children('li').hide();
+        $(this).children('ul').hide();
     });
-    console.log('as')
+
 
 })
 
