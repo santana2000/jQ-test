@@ -72,19 +72,29 @@ body {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     width: 751px;
-    height: 160px;
+    height: 180px;
     margin-top: 5px;
-    padding: 15px;
+    padding: 15px 15px 3px 15px;
     background: #fffaff;
 
+
+}
+.main-word {
+    margin-bottom: 10px;
+}
+.commit {
+    overflow: hidden;
 }
 .time {
     display: block;
     float: left;
-    margin-top: 5px;
+    color: cadetblue;
+
+
 }
 .zan {
     display: block;
     float: right;
+
 
 }
