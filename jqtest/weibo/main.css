@@ -40,14 +40,16 @@ body {
     float: left;
 }
 .write {
-    width: 723px;
+    width: 720px;
     height: 98px;
     /*background: indianred;*/
     position: absolute;
-    top: 50px;
+    top: 49px;
     left: 14px;
     border: darkgrey solid 1.5px;
-    outline-style: none;
+    line-height: 20px;
+    resize: none;
+
 
 
 }
@@ -62,6 +64,8 @@ body {
     bottom:15px;
     right:13px;
     outline-style: none;
+
+
 }
 .content {
     -webkit-box-sizing: border-box;
