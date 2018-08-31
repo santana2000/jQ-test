@@ -19,7 +19,8 @@ $(function () {
     //教务系统侧栏实现
     var student = $('.student');
     var span = $('.student span');
-    //console.log(span);
+
+    console.log($('#t'));
 
     span.on('click',function () {
         $(this).next('div').show();

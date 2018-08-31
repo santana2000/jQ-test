@@ -1,0 +1,86 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background: url("images/body_bg.jpg")  no-repeat;
+    background-color: #1f160f;
+}
+.top  {
+    width: 100%;
+}
+.top>img {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+.wrap {
+    background: rgba(43, 19, 12, 0.3);
+    width: 1250px;
+    height: 1000px;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 25px;
+    margin: 150px auto;
+    overflow: hidden;
+    z-index: 3;
+
+}
+.left {
+    float: left;
+    z-index: 4;
+}
+.right {
+    float: right;
+    z-index: 4;
+
+}
+.center {
+    width: 751px;
+    height: 208px;
+    position: relative;
+    float: left;
+}
+.write {
+    width: 723px;
+    height: 98px;
+    /*background: indianred;*/
+    position: absolute;
+    top: 50px;
+    left: 14px;
+    border: darkgrey solid 1.5px;
+    outline-style: none;
+
+
+}
+.release {
+    background:#ffc09f ;
+    color: #f4f4f4;
+    width: 104px;
+    height: 37px;
+    padding: 0px;
+    font-size: 20px;
+    position: absolute;
+    bottom:15px;
+    right:13px;
+    outline-style: none;
+}
+.content {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 751px;
+    height: 160px;
+    margin-top: 5px;
+    padding: 15px;
+    background: #fffaff;
+
+}
+.time {
+    display: block;
+    float: left;
+    margin-top: 5px;
+}
+.zan {
+    display: block;
+    float: right;
+
+}
