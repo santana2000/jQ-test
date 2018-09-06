@@ -20,7 +20,7 @@ $(function () {
     var student = $('.student');
     var span = $('.student span');
 
-    console.log($('#t'));
+    console.log($('.click-show'));
 
     span.on('click',function () {
         $(this).next('div').show();

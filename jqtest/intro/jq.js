@@ -30,6 +30,7 @@ $('.erzi').filter('#c3').css('background','yellow');
 
 //操作样式
 //1.多个样式以对象的形式来写
+
 $('#css').css({
     //display:'none',
     color:'white',

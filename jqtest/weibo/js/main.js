@@ -38,7 +38,8 @@ $(function () {
     });
 
 
-    $('.center').delegate('.zan','click',function () {
+    //事件委托新写法
+    $('.center').on('click','.zan',function () {
 
         $(this).parents('.content').remove();
     })
